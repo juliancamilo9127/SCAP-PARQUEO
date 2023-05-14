@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>Personas-SCAP</title>
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fuentes-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/nice-select.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive celulares css-->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="bg-box">
+      <img src="images/slider-bg.jpg" alt="">
+    </div>
+    <!-- sección de inicio-->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              SCAP
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="caja.html">Caja</a>
+              </li>
+			  
+			  <li class="nav-item">
+                <a class="nav-link" href="tarifas.html"> Tarifas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parqueaderos.html">Parqueaderos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="usuarios.html">Usuarios</a>
+              </li>
+			   <li class="nav-item active">
+                <a class="nav-link" href="personas.html">Personas</a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="novedades.html">Novedades</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+    <section class="slider_section ">
+      <div class="container">
+        <div class="detail-box col-md-9 mx-auto px-0">
+          <h1>
+           Personas
+          </h1>
+          
+        </div>
+        <div class="find_form_container">
+          <form action="guardar_personas.php" method="POST">
+            <div class="form-row">
+             
+              <div class="col-md-4 px-0">
+                <div class="form-group ">
+                  <label for="usuarios">Usuario</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control"  id="usuarios" name="usuarios" placeholder="Digite un usuario" />
+                  </div>
+                </div>
+              </div>
+			   <div class="col-md-4 px-0">
+                <div class="form-group ">
+                  <label for="nombre">Nombre completo</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control"  id="nombre" name="nombre" placeholder="Digite su nombre completo" />
+                  </div>
+                </div>
+              </div>
+			     <div class="col-md-4 px-0">
+                <div class="form-group ">
+                  <label for="password">Contraseña</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control"  id="password" name="password" placeholder="Digite su contraseña" />
+                  </div>
+                </div>
+              </div>
+			  
+			  <div class="col-md-4 px-0">
+                <div class="form-group">
+                  <label for="permiso">Seleccione tipo de permiso</label>
+                  <div class="input-group">
+                    <select class="form-control" id="permiso" name="permiso" type="text" >
+                      <option data-display="novedad">Seleccione</option>
+                      <option value="administrador">administrador</option>
+                      <option value="empleado">empleado</option>
+                      <option value="otro">otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+                 <div class="btn-box">
+              <button type="submit" value="Guardar" class="">
+                <span>
+                  Nuevo
+                </span>
+              </button>
+			   </div>
+			   
+		
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- fin sección -->
+  </div>
+
+  
+  <!-- footer sección -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        UNAD
+      </p>
+    </div>
+  </footer>
+  <!-- footer sección -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js">
+  </script>
+ 
+  <script src="js/jquery.nice-select.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
